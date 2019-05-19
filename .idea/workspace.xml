@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="becd3396-20d4-41aa-b895-09dd04047473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/flutter_web_dashboard.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/model/comment_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/model/project_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/widget/chart_card_tile.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/widget/comment_widget.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/widget/profile_Widget.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/widget/project_widget.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/widget/quick_contact.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/widget/vawe_clipper.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/images/profile-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/commons/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/commons/theme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/pages/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/pages/home_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/pages/main_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/widget/card_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/widget/card_tile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/widget/sidebar_menu..dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/widget/sidebar_menu..dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/FontManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/FontManifest.json" afterDir="false" />
-    </list>
+    <list default="true" id="becd3396-20d4-41aa-b895-09dd04047473" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,49 +128,6 @@
               <item name="flutter_web_dashboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_web_dashboard" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="flutter_web_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_web_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_web_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_web_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_web_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_web_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_web_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_web_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="widget" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_web_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_web_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_web_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_web_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_web_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_web_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -249,12 +180,12 @@
       <option name="presentableId" value="Default" />
       <updated>1558073538181</updated>
       <workItem from="1558073539371" duration="5945000" />
-      <workItem from="1558109374227" duration="23211000" />
+      <workItem from="1558109374227" duration="23462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29156000" />
+    <option name="totallyTimeSpent" value="29407000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -267,7 +198,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="34" y="48" width="1930" height="1417" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.118114404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -284,7 +214,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32925898" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32925898" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.107715815" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.40488923" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
