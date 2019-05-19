@@ -9,5 +9,5 @@ Flutter Wallet UI Challange
   
   Page Name | Pictures   
  --- | --- 
- [Home Page] | <img src="1.png" height= "800"/>
+ [Home Page] | <img src="1.png" height= "600"/>
 
