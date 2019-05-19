@@ -7,19 +7,28 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment: CrossAxisAlignment.end,
+          Wrap(
+            crossAxisAlignment: WrapCrossAlignment.center,
+            direction: Axis.horizontal,
+            runAlignment: WrapAlignment.spaceEvenly,
             children: <Widget>[
               SizedBox(width: 300),
-              CardTile(color: Colors.redAccent),
+              CardTile(
+                iconBgColor: Colors.orange,
+                cardTitle: "Booking",
+              ),
               SizedBox(width: 30),
-              CardTile(color: Colors.amberAccent),
+              CardTile(
+                iconBgColor: Colors.pinkAccent,
+              ),
               SizedBox(width: 30),
-              CardTile(color: Colors.blueAccent),
+              CardTile(
+                iconBgColor: Colors.green,
+              ),
               SizedBox(width: 30),
-              CardTile(color: Colors.tealAccent),
+              CardTile(
+                iconBgColor: Colors.lightBlueAccent,
+              ),
               SizedBox(width: 30),
             ],
           )

@@ -11,7 +11,7 @@
         "family": "Montserrat",
         "fonts": [
             {
-                "asset": "Montserrat-Regular.ttf"
+                "asset": "fonts/Montserrat-Regular.ttf"
             }
         ]
     }
