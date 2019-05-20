@@ -151,7 +151,7 @@ class QuickContact extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Align(
-                alignment: Alignment.bottomRight,
+                alignment: Alignment.bottomLeft,
                 child: InkWell(
                   onTap: _showDialog,
                   child: Material(

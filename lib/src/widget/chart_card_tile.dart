@@ -1,4 +1,5 @@
 import 'package:flutter_web/material.dart';
+import 'package:flutter_web_dashboard/src/widget/responsive_widget.dart';
 
 class ChartCardTile extends StatelessWidget {
   final Color cardColor;
@@ -27,7 +28,8 @@ class ChartCardTile extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.all(30),
+            padding:
+                _media.width >= 1280 ? EdgeInsets.all(15) : EdgeInsets.all(5),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
               color: cardColor,
@@ -47,9 +49,19 @@ class ChartCardTile extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text(cardTitle,
-                            style:
-                                TextStyle(fontSize: 26, color: Colors.white)),
+                        FittedBox(
+                          child: Text(
+                            cardTitle,
+                            softWrap: true,
+                            overflow: TextOverflow.clip,
+                            style: TextStyle(
+                              fontSize: ResponsiveWidget.isLargeScreen(context)
+                                  ? 26
+                                  : 18,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
                         SizedBox(height: 5),
                         Text(subText,
                             style:
