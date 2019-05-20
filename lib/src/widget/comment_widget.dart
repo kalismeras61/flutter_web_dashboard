@@ -20,7 +20,7 @@ class CommentWidget extends StatelessWidget {
       color: Colors.white,
       child: Container(
         padding: EdgeInsets.all(20),
-        height: _media.height / 2.3,
+        height: _media.height / 1.4,
         width: _media.width / 2,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,6 +37,7 @@ class CommentWidget extends StatelessWidget {
             SizedBox(height: 20),
             Expanded(
               child: ListView.builder(
+                shrinkWrap: true,
                 itemCount: commentList.length,
                 itemBuilder: (context, index) {
                   return Padding(

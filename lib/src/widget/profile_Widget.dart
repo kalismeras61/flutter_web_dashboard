@@ -19,7 +19,7 @@ class ProfileWidget extends StatelessWidget {
       color: Colors.white,
       child: Container(
         height: _media.height / 2.3,
-        width: _media.width / 3.18,
+        width: _media.width / 3.2 - 22,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(4),
         ),

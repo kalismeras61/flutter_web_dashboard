@@ -23,38 +23,39 @@ class MainPage extends StatelessWidget {
           SideBarMenu(),
           Flexible(
             fit: FlexFit.loose,
-            child: Stack(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    SizedBox(
-                      height: 55,
-                      width: _media.width,
-                      child: AppBar(
-                        elevation: 4,
-                        centerTitle: true,
-                        title: Text(
-                          "Flutter Dashboard Web",
-                        ),
-                        backgroundColor: drawerBgColor,
-                      ),
+                SizedBox(
+                  height: 55,
+                  width: _media.width,
+                  child: AppBar(
+                    elevation: 4,
+                    centerTitle: true,
+                    title: Text(
+                      "Flutter Dashboard Web",
                     ),
-                    Expanded(
-                      child: ListView(
-                        padding: EdgeInsets.only(top: 20, left: 20, right: 20) +
-                            MediaQuery.of(context).padding,
-                        children: <Widget>[
-                          Row(
-                            children: <Widget>[
-                              Column(
-                                children: <Widget>[
-                                  Row(
+                    backgroundColor: drawerBgColor,
+                  ),
+                ),
+                Expanded(
+                  child: ListView(
+                    padding: EdgeInsets.only(top: 20, left: 20, right: 20),
+                    children: <Widget>[
+                      IntrinsicHeight(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Column(
+                              children: <Widget>[
+                                IntrinsicHeight(
+                                  child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                        CrossAxisAlignment.stretch,
                                     children: <Widget>[
                                       CardTile(
                                         iconBgColor: Colors.orange,
@@ -63,7 +64,7 @@ class MainPage extends StatelessWidget {
                                         subText: "Todays",
                                         mainText: "230",
                                       ),
-                                      SizedBox(width: 30),
+                                      SizedBox(width: 20),
                                       CardTile(
                                         iconBgColor: Colors.pinkAccent,
                                         cardTitle: "Website Visits",
@@ -72,7 +73,7 @@ class MainPage extends StatelessWidget {
                                             "Tracked from Google Analytics",
                                         mainText: "3.560",
                                       ),
-                                      SizedBox(width: 30),
+                                      SizedBox(width: 20),
                                       CardTile(
                                         iconBgColor: Colors.green,
                                         cardTitle: "Revenue",
@@ -80,7 +81,7 @@ class MainPage extends StatelessWidget {
                                         subText: "Last 24 Hours",
                                         mainText: "2500",
                                       ),
-                                      SizedBox(width: 30),
+                                      SizedBox(width: 20),
                                       CardTile(
                                         iconBgColor: Colors.lightBlueAccent,
                                         cardTitle: "Followors",
@@ -90,12 +91,18 @@ class MainPage extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  SizedBox(
-                                    height: 30,
-                                  ),
-                                  Row(
+                                ),
+                                SizedBox(
+                                  height: 20,
+                                ),
+                                IntrinsicHeight(
+                                  child: Row(
                                     children: <Widget>[
                                       Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: <Widget>[
                                           ChartCardTile(
                                             cardColor: Color(0xFF7560ED),
@@ -117,36 +124,40 @@ class MainPage extends StatelessWidget {
                                         ],
                                       ),
                                       SizedBox(
-                                        width: 50,
+                                        width: 20,
                                       ),
                                       ProjectWidget(media: _media),
                                     ],
                                   ),
-                                  SizedBox(
-                                    height: 20,
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              QuickContact(media: _media)
-                            ],
-                          ),
-                          Row(
-                            children: <Widget>[
-                              CommentWidget(media: _media),
-                              SizedBox(
-                                width: 20,
-                              ),
-                              ProfileWidget(media: _media),
-                            ],
-                          ),
-                          SizedBox(height: 20),
-                        ],
+                                ),
+                                SizedBox(
+                                  height: 20,
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            QuickContact(media: _media)
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                      IntrinsicHeight(
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: <Widget>[
+                            CommentWidget(media: _media),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            ProfileWidget(media: _media),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                    ],
+                  ),
                 ),
               ],
             ),

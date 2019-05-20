@@ -1,5 +1,4 @@
 import 'package:flutter_web/material.dart';
-import 'package:flutter_web_dashboard/src/widget/vawe_clipper.dart';
 
 class ChartCardTile extends StatelessWidget {
   final Color cardColor;
@@ -33,7 +32,7 @@ class ChartCardTile extends StatelessWidget {
               borderRadius: BorderRadius.circular(4),
               color: cardColor,
             ),
-            height: _media.height / 6,
+            height: _media.height / 4,
             width: _media.width / 4,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,

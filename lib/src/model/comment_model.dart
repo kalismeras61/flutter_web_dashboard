@@ -34,7 +34,7 @@ List<Comment> commentList = [
     status: Status.Approved,
     image: "images/2.jpg",
     date: "May 19, 2019",
-    color: Colors.lightGreenAccent,
+    color: Colors.green,
     comment:
         "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has beenorem Ipsum is simply dummy text of the printing and type setting ",
   ),

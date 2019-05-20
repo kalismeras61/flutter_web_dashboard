@@ -22,7 +22,7 @@ class CardTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final _media = MediaQuery.of(context).size;
     return Container(
-      height: _media.height / 7,
+      height: _media.height / 6,
       width: _media.width / 7,
       child: Stack(
         alignment: Alignment.bottomCenter,
@@ -33,7 +33,7 @@ class CardTile extends StatelessWidget {
             shadowColor: Colors.grey,
             borderRadius: BorderRadius.circular(4),
             child: Container(
-              height: _media.height / 8,
+              height: _media.height / 6.5,
               width: _media.width / 7,
               padding: EdgeInsets.only(left: 10, right: 10, top: 10),
               child: Column(
@@ -81,7 +81,7 @@ class CardTile extends StatelessWidget {
                 width: _media.width / 20,
                 child: Icon(
                   icon,
-                  size: 50,
+                  size: 40,
                   color: Colors.white,
                 ),
               ),

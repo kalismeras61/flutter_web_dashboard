@@ -46,9 +46,9 @@ class QuickContact extends StatelessWidget {
       shadowColor: Colors.grey,
       borderRadius: BorderRadius.circular(4),
       child: Container(
-        padding: EdgeInsets.all(20),
-        height: _media.height / 1.98,
-        width: _media.width / 5,
+        padding: EdgeInsets.only(top: 10, left: 10, right: 10),
+        height: _media.height / 1.38 - 4,
+        width: _media.width / 5 - 10,
         color: Colors.white,
         child: Form(
           key: _formKey,
