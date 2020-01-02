@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 
 enum Priority {
   Low,
@@ -27,41 +27,41 @@ class Project {
 
 List<Project> projectItems = [
   Project(
-      assigned: "Sunil Joshi",
-      name: "Elite Admin",
+      assigned: 'Sunil Joshi',
+      name: 'Elite Admin',
       priority: Priority.Low,
-      position: "Web Designer",
+      position: 'Web Designer',
       budget: 3.9,
       color: Colors.yellow),
   Project(
-    assigned: "Andrew Elena",
-    name: "Real Homes",
+    assigned: 'Andrew Elena',
+    name: 'Real Homes',
     priority: Priority.Medium,
-    position: "Project Manager",
+    position: 'Project Manager',
     budget: 23.9,
     color: Colors.lightBlue,
   ),
   Project(
-    assigned: "Bhavesh patel",
-    name: "Flutter Web",
+    assigned: 'Bhavesh patel',
+    name: 'Flutter Web',
     priority: Priority.High,
-    position: "Developer",
+    position: 'Developer',
     budget: 12.9,
     color: Colors.red,
   ),
   Project(
-    assigned: "Nirav Joshi",
-    name: "Elite Admin",
+    assigned: 'Nirav Joshi',
+    name: 'Elite Admin',
     priority: Priority.Low,
-    position: "Frontend Eng",
+    position: 'Frontend Eng',
     budget: 10.9,
     color: Colors.yellow,
   ),
   Project(
-    assigned: "Joe Doe",
-    name: "Helping Hands",
+    assigned: 'Joe Doe',
+    name: 'Helping Hands',
     priority: Priority.High,
-    position: "Content Writer",
+    position: 'Content Writer',
     budget: 2.6,
     color: Colors.red,
   ),

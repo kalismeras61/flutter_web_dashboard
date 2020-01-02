@@ -1,5 +1,5 @@
-import 'package:flutter_web/cupertino.dart';
-import 'package:flutter_web/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_web_dashboard/src/commons/theme.dart';
 import 'package:flutter_web_dashboard/src/widget/card_tile.dart';
 import 'package:flutter_web_dashboard/src/widget/chart_card_tile.dart';
@@ -17,14 +17,15 @@ class MainPage extends StatelessWidget {
     print(_media);
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
+
         if (constraints.maxWidth <= 800) {
           return Center(
-            child: Text("küçük"),
+            child: Text('küçük'),
           );
         } else if (constraints.maxWidth <= 1280 &&
             constraints.maxWidth >= 800) {
           return Center(
-            child: Text("ddede"),
+            child: Text('ddede'),
           );
         } else if (constraints.maxWidth >= 1280) {
           return Material(
@@ -50,7 +51,7 @@ class MainPage extends StatelessWidget {
                           elevation: 4,
                           centerTitle: true,
                           title: Text(
-                            "Flutter Dashboard Web",
+                            'Flutter Dashboard Web',
                           ),
                           backgroundColor: drawerBgColor,
                         ),
@@ -76,36 +77,36 @@ class MainPage extends StatelessWidget {
                                           children: <Widget>[
                                             CardTile(
                                               iconBgColor: Colors.orange,
-                                              cardTitle: "Booking",
+                                              cardTitle: 'Booking',
                                               icon: Icons.flight_takeoff,
-                                              subText: "Todays",
-                                              mainText: "230",
+                                              subText: 'Todays',
+                                              mainText: '230',
                                             ),
                                             SizedBox(width: 20),
                                             CardTile(
                                               iconBgColor: Colors.pinkAccent,
-                                              cardTitle: "Website Visits",
+                                              cardTitle: 'Website Visits',
                                               icon: Icons.show_chart,
                                               subText:
-                                                  "Tracked from Google Analytics",
-                                              mainText: "3.560",
+                                                  'Tracked from Google Analytics',
+                                              mainText: '3.560',
                                             ),
                                             SizedBox(width: 20),
                                             CardTile(
                                               iconBgColor: Colors.green,
-                                              cardTitle: "Revenue",
+                                              cardTitle: 'Revenue',
                                               icon: Icons.home,
-                                              subText: "Last 24 Hours",
-                                              mainText: "2500",
+                                              subText: 'Last 24 Hours',
+                                              mainText: '2500',
                                             ),
                                             SizedBox(width: 20),
                                             CardTile(
                                               iconBgColor:
                                                   Colors.lightBlueAccent,
-                                              cardTitle: "Followors",
+                                              cardTitle: 'Followors',
                                               icon: Icons.unfold_less,
-                                              subText: "Last 24 Hours",
-                                              mainText: "112",
+                                              subText: 'Last 24 Hours',
+                                              mainText: '112',
                                             ),
                                           ],
                                         ),
@@ -124,20 +125,20 @@ class MainPage extends StatelessWidget {
                                               children: <Widget>[
                                                 ChartCardTile(
                                                   cardColor: Color(0xFF7560ED),
-                                                  cardTitle: "Bandwidth usage",
-                                                  subText: "March 2017",
+                                                  cardTitle: 'Bandwidth usage',
+                                                  subText: 'March 2017',
                                                   icon: Icons.pie_chart,
-                                                  typeText: "50 GB",
+                                                  typeText: '50 GB',
                                                 ),
                                                 SizedBox(
                                                   height: 20,
                                                 ),
                                                 ChartCardTile(
                                                   cardColor: Color(0xFF25C6DA),
-                                                  cardTitle: "Download count",
-                                                  subText: "March 2017",
+                                                  cardTitle: 'Download count',
+                                                  subText: 'March 2017',
                                                   icon: Icons.cloud_upload,
-                                                  typeText: "35487",
+                                                  typeText: '35487',
                                                 ),
                                               ],
                                             ),
@@ -184,6 +185,7 @@ class MainPage extends StatelessWidget {
             ),
           );
         }
+        return Container();
       },
     );
   }

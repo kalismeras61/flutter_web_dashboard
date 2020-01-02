@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_web_dashboard/src/commons/theme.dart';
 import 'package:flutter_web_dashboard/src/model/project_model.dart';
 
@@ -32,7 +32,7 @@ class ProjectWidget extends StatelessWidget {
                   top: 10,
                   left: 20,
                   child: Text(
-                    "Projects of the Month",
+                    'Projects of the Month',
                     style: cardTitleTextStyle,
                   ),
                 ),
@@ -46,19 +46,19 @@ class ProjectWidget extends StatelessWidget {
                         children: <Widget>[
                           SizedBox(width: 2),
                           Text(
-                            "Assigned",
+                            'Assigned',
                             style: TextStyle(color: Colors.grey),
                           ),
                           Text(
-                            "Name",
+                            'Name',
                             style: TextStyle(color: Colors.grey),
                           ),
                           Text(
-                            "Priority",
+                            'Priority',
                             style: TextStyle(color: Colors.grey),
                           ),
                           Text(
-                            "Budget",
+                            'Budget',
                             style: TextStyle(color: Colors.grey),
                           ),
                         ],
@@ -96,11 +96,11 @@ class ProjectWidget extends StatelessWidget {
                                 Container(
                                   child: Text(
                                     projectItems[index].priority.index == 0
-                                        ? "Low"
+                                        ? 'Low'
                                         : projectItems[index].priority.index ==
                                                 1
-                                            ? "Medium"
-                                            : "High",
+                                            ? 'Medium'
+                                            : 'High',
                                     textAlign: TextAlign.justify,
                                     style: TextStyle(
                                       color: Colors.white,
@@ -115,7 +115,7 @@ class ProjectWidget extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                    "${projectItems[index].budget.toString()} K"),
+                                    '${projectItems[index].budget.toString()} K'),
                               ],
                             ),
                           );

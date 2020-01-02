@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_web_dashboard/src/commons/theme.dart';
 import 'package:flutter_web_dashboard/src/model/comment_model.dart';
 
@@ -26,12 +26,12 @@ class CommentWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              "Recent Comments",
+              'Recent Comments',
               style: cardTitleTextStyle,
             ),
             SizedBox(height: 10),
             Text(
-              "Latest Comments on users from Material",
+              'Latest Comments on users from Material',
               style: TextStyle(fontSize: 13, color: Colors.grey),
             ),
             SizedBox(height: 20),
@@ -58,14 +58,14 @@ class CommentWidget extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Text(
-                              "${commentList[index].comment}",
+                              '${commentList[index].comment}',
                               style: TextStyle(fontSize: 12),
                             ),
                             SizedBox(height: 5),
                             Row(
                               children: <Widget>[
                                 Text(
-                                  "${commentList[index].date}",
+                                  '${commentList[index].date}',
                                   style: TextStyle(fontSize: 12),
                                 ),
                                 SizedBox(width: 10),
@@ -91,10 +91,10 @@ class CommentWidget extends StatelessWidget {
                           height: 20,
                           child: Text(
                             commentList[index].status.index == 0
-                                ? "Pending"
+                                ? 'Pending'
                                 : commentList[index].status.index == 1
-                                    ? "Approved"
-                                    : "Rejected",
+                                    ? 'Approved'
+                                    : 'Rejected',
                             style: TextStyle(
                               fontSize: 10,
                               color: Colors.white,

@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 
 TextStyle menuListTileDefaultText =
     TextStyle(color: Colors.white70, fontSize: 18, fontWeight: FontWeight.bold);

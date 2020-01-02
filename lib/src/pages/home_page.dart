@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_web_dashboard/src/widget/card_tile.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
               SizedBox(width: 300),
               CardTile(
                 iconBgColor: Colors.orange,
-                cardTitle: "Booking",
+                cardTitle: 'Booking',
               ),
               SizedBox(width: 30),
               CardTile(

@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_web_dashboard/src/commons/theme.dart';
 
 class MenuItemTile extends StatefulWidget {
@@ -18,7 +18,7 @@ class MenuItemTile extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _MenuItemTileState createState() => new _MenuItemTileState();
+  _MenuItemTileState createState() => _MenuItemTileState();
 }
 
 class _MenuItemTileState extends State<MenuItemTile> {

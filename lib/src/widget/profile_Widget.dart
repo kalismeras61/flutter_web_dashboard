@@ -1,5 +1,5 @@
-import 'package:flutter_web/cupertino.dart';
-import 'package:flutter_web/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class ProfileWidget extends StatelessWidget {
   const ProfileWidget({
@@ -19,7 +19,7 @@ class ProfileWidget extends StatelessWidget {
       color: Colors.white,
       child: Container(
         height: _media.height / 2.3,
-        width: _media.width / 3.2 - 22,
+        width: _media.width / 3.2 - 25,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(4),
         ),
@@ -45,7 +45,7 @@ class ProfileWidget extends StatelessWidget {
                               image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: AssetImage(
-                                  "images/profile-bg.jpg",
+                                  'assets/images/profile-bg.jpg',
                                 ),
                               ),
                               color: Colors.grey,
@@ -70,7 +70,7 @@ class ProfileWidget extends StatelessWidget {
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             image: DecorationImage(
-                              image: AssetImage("images/4.jpg"),
+                              image: AssetImage('assets/images/4.jpg'),
                             )),
                       ),
                     )
@@ -89,7 +89,7 @@ class ProfileWidget extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Text(
-                      "James Anderson",
+                      'James Anderson',
                       style: TextStyle(
                         fontSize: 24,
                         color: Colors.black87,
@@ -100,7 +100,7 @@ class ProfileWidget extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      "Web Designer & Developer",
+                      'Web Designer & Developer',
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.grey,
@@ -111,7 +111,7 @@ class ProfileWidget extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      "Lorem ipsum dolor sit amet, this is a consectetur adipisicing elit",
+                      'Lorem ipsum dolor sit amet, this is a consectetur adipisicing elit',
                       style: TextStyle(
                         fontSize: 13,
                         color: Colors.grey,
@@ -129,9 +129,9 @@ class ProfileWidget extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
-                        onPressed: () => print("follow"),
+                        onPressed: () => print('follow'),
                         child: Text(
-                          "Follow",
+                          'Follow',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
@@ -149,11 +149,11 @@ class ProfileWidget extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             Text(
-                              "1099",
+                              '1099',
                               style: TextStyle(fontSize: 20),
                             ),
                             Text(
-                              "Articles",
+                              'Articles',
                               style: TextStyle(
                                 fontSize: 15,
                                 color: Colors.grey,
@@ -164,11 +164,11 @@ class ProfileWidget extends StatelessWidget {
                         Column(
                           children: <Widget>[
                             Text(
-                              "23,469",
+                              '23,469',
                               style: TextStyle(fontSize: 20),
                             ),
                             Text(
-                              "Followers",
+                              'Followers',
                               style: TextStyle(
                                 fontSize: 15,
                                 color: Colors.grey,
@@ -179,11 +179,11 @@ class ProfileWidget extends StatelessWidget {
                         Column(
                           children: <Widget>[
                             Text(
-                              "6035",
+                              '6035',
                               style: TextStyle(fontSize: 20),
                             ),
                             Text(
-                              "Following",
+                              'Following',
                               style: TextStyle(
                                 fontSize: 15,
                                 color: Colors.grey,

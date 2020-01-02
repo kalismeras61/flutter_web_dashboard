@@ -1,6 +1,7 @@
-import 'package:flutter_web/cupertino.dart';
-import 'package:flutter_web/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_web_dashboard/src/pages/main_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         textTheme: TextTheme(title: TextStyle(color: Colors.black)),
-        fontFamily: "Montserrat",
+        fontFamily: GoogleFonts.montserrat().fontFamily,
       ),
       home: MainPage(),
     );

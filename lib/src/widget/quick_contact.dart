@@ -1,5 +1,5 @@
-import 'package:flutter_web/material.dart';
-import 'package:flutter_web/widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_web_dashboard/src/commons/theme.dart';
 
 class QuickContact extends StatelessWidget {
@@ -13,7 +13,7 @@ class QuickContact extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
     void _showDialog() {
       showDialog(
         context: context,
@@ -21,16 +21,16 @@ class QuickContact extends StatelessWidget {
           // return object of type Dialog
           return AlertDialog(
             title: Text(
-              "Successfully",
+              'Successfully',
               style: TextStyle(
                 color: Colors.greenAccent,
               ),
             ),
-            content: Text("Your Message has been sent."),
+            content: Text('Your Message has been sent.'),
             actions: <Widget>[
               // usually buttons at the bottom of the dialog
-              new FlatButton(
-                child: new Text("Close"),
+               FlatButton(
+                child:  Text('Close'),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
@@ -47,17 +47,18 @@ class QuickContact extends StatelessWidget {
       borderRadius: BorderRadius.circular(4),
       child: Container(
         padding: EdgeInsets.only(top: 10, left: 10, right: 10),
-        height: _media.height / 1.38 - 4,
-        width: _media.width / 5 - 10,
+        height: _media.height / 1.38 - 5,
+        width: _media.width / 5 - 12,
         color: Colors.white,
         child: Form(
           key: _formKey,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               Text(
-                "Quick Contact",
+                'Quick Contact',
                 style: cardTitleTextStyle,
               ),
               SizedBox(height: 50),
@@ -75,7 +76,7 @@ class QuickContact extends StatelessWidget {
                       fillColor: Colors.white,
                       filled: true,
                       contentPadding:
-                          EdgeInsets.fromLTRB(10.0, 10.0, 20.0, 10.0),
+                          EdgeInsets.fromLTRB(10.0, 10.0, 20.0, 15.0),
                       enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(5.0),
                           borderSide:
@@ -133,7 +134,7 @@ class QuickContact extends StatelessWidget {
                 borderRadius: BorderRadius.circular(4),
                 child: TextFormField(
                   keyboardType: TextInputType.multiline,
-                  maxLines: 10,
+                  maxLines: 6,
                   decoration: InputDecoration(
                     hintText: 'Message',
                     fillColor: Colors.white,
@@ -149,7 +150,7 @@ class QuickContact extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               Align(
                 alignment: Alignment.bottomLeft,
                 child: InkWell(
@@ -166,7 +167,7 @@ class QuickContact extends StatelessWidget {
                       height: 35,
                       width: 80,
                       child: Text(
-                        "Send",
+                        'Send',
                         style: TextStyle(
                           color: Colors.white,
                         ),

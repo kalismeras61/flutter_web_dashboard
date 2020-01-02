@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_web_dashboard/src/commons/theme.dart';
 import 'package:flutter_web_dashboard/src/model/menu.dart';
 import 'package:flutter_web_dashboard/src/widget/menu_item_tile.dart';
@@ -41,7 +41,7 @@ class _SideBarMenuState extends State<SideBarMenu>
             color: drawerBgColor,
           ),
           width: _animation.value,
-          child: new Column(
+          child:  Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
@@ -51,7 +51,7 @@ class _SideBarMenuState extends State<SideBarMenu>
                     color: Colors.grey.shade300,
                     image: DecorationImage(
                       image: NetworkImage(
-                          "https://backgrounddownload.com/wp-content/uploads/2018/09/google-material-design-background-6.jpg"),
+                          'https://backgrounddownload.com/wp-content/uploads/2018/09/google-material-design-background-6.jpg'),
                       fit: BoxFit.cover,
                     )),
                 child: Container(
@@ -67,7 +67,7 @@ class _SideBarMenuState extends State<SideBarMenu>
                         children: <Widget>[
                           CircleAvatar(
                             backgroundImage: NetworkImage(
-                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI4JuatGP6M5_Q0wYSkx2jAVzJff1FBaPYXV7zFbMngh5RV6J7"),
+                                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI4JuatGP6M5_Q0wYSkx2jAVzJff1FBaPYXV7zFbMngh5RV6J7'),
                             backgroundColor: Colors.white,
                             radius: _animation.value >= 250 ? 30 : 20,
                           ),
@@ -75,7 +75,7 @@ class _SideBarMenuState extends State<SideBarMenu>
                             width: _animation.value >= 250 ? 20 : 0,
                           ),
                           (_animation.value >= 250)
-                              ? Text("Yasin ilhan",
+                              ? Text('Yasin ilhan',
                                   style: menuListTileDefaultText)
                               : Container(),
                         ],
@@ -86,7 +86,7 @@ class _SideBarMenuState extends State<SideBarMenu>
                       Spacer(),
                       (_animation.value >= 250)
                           ? Text(
-                              "Yasin ilhan",
+                              'Yasin ilhan',
                               style: TextStyle(
                                 fontSize: 16,
                                 color: Colors.white,
@@ -96,7 +96,7 @@ class _SideBarMenuState extends State<SideBarMenu>
                           : Container(),
                       (_animation.value >= 250)
                           ? Text(
-                              "yasinilhan61@gmail.com",
+                              'yasinilhan61@gmail.com',
                               style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.white,

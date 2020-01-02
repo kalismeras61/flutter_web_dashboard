@@ -1,9 +1,9 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 
 class WaveClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
-    final Path path = Path();
+    final  path = Path();
 
     path.lineTo(0.0, size.height);
     path.lineTo(size.width, size.height);

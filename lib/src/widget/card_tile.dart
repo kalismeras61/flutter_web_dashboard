@@ -1,5 +1,5 @@
-import 'package:flutter_web/material.dart';
-import 'package:flutter_web/painting.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter_web_dashboard/src/commons/theme.dart';
 
 class CardTile extends StatelessWidget {
